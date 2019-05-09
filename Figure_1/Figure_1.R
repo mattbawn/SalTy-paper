@@ -134,6 +134,6 @@ p2 <- p1 %<+% merge.data + geom_tiplab(aes(label=type, color=level3), size=5, al
 df <- get_heatmap_column_position(p2, by="top")
 p3 <- p2 + geom_text(data = df, aes(x,y+2, label=label), size=1.5, angle=90 ) + geom_tippoint(aes(color=source),size=3)
 
-# # ggsave("rerroted-tree.pdf",plot = p5,  width = 800, height = 500, units = "mm",
-# #         bg = "transparent")
+ggsave("Figure_1.pdf",plot = p3,  width = 800, height = 500, units = "mm",
+        bg = "transparent")
 # 
